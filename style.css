@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+}
+
+#hand{
+	animation: handd 1s infinite alternate;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes handd{
+	from{
+		transform: translate(0px);
+	}
+	to{
+		transform: translate(5px);
+	}
+}
+
+#head {
+	animation: headd 2s infinite ;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes headd{
+	from{
+		transform: rotateZ(0deg);
+	}
+	to{
+		transform: rotateZ(360deg);
+	}
+}
